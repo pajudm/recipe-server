@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: mongo
+    env_file: 
+      - ./base.env
+  api:
+    image: patricksison/docker-node-react
+    command: nodemon /app/server.js
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    env_file:
+      - ./base_env
