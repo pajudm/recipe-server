@@ -7,10 +7,12 @@ services:
       - ./base.env
   api:
     image: patricksison/docker-node-react
-    command: nodemon /app/server.js
+    command: bash -c "cd /app && nodemon index.js"
     volumes:
       - .:/app
     depends_on:
       - db
     env_file:
-      - ./base_env
+      - ./base.env
+    ports:
+      - "8080:8080"
