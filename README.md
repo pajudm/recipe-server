@@ -42,7 +42,7 @@ A step by step series of examples that tell you how to get a development env run
 First, clone the repo to where you want your project to be. If it doesn't work, you may need to set up an SSH key for your github account. [See here for instructions](https://github.com/settings/keys)
 
 ```
-git clone git@gitlab.com:pajudm/recipe-server.git
+git clone git@github.com:pajudm/recipe-server.git
 ```
 
 *WIP* To run the server, run
