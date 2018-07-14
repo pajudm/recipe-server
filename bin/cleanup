@@ -1,0 +1,10 @@
+#! /bin/sh
+
+echo "Stopping docker processes"
+docker stop $(docker ps -aq)
+echo "Removing docker processes"
+docker rm $(docker ps -aq)
+echo "Removing docker images"
+docker rmi $(docker images -aq)
+echo "Removing dangling docker volumes"
+docker volume rm $(docker volume ls -f dangling=true -q)
