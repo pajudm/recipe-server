@@ -54,6 +54,8 @@ docker-compose up
 ```
 This can be terminated by pressing CTRL+C. MongoDB will be running in a container, and the NodeJS/Express server will be running in another container
 
+## Testing
+It might be good to test requests using a tool called [Postman](https://www.getpostman.com/) which let's you perform HTTP requests with a GUI.
 
 <!-- ## Running the tests
 
