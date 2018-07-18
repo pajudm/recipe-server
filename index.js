@@ -6,7 +6,7 @@ const passport = require('passport');
 
 const app = express();
 
-const PORT = 8080;
+const PORT = 80;
 
 const MONGO_ADDRESS = process.env.MONGO_ADDRESS || 'db'
 const MONGO_PORT = process.env.MONGO_PORT || '27017'
